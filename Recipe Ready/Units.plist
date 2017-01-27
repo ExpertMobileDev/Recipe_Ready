@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>category</key>
+		<string>Volume</string>
+		<key>units</key>
+		<array>
+			<string>teaspoons</string>
+			<string>tablespoons</string>
+			<string>fluid ounces</string>
+			<string>gills</string>
+			<string>cups</string>
+			<string>pints</string>
+			<string>quarts</string>
+			<string>gallons</string>
+			<string>milliliters</string>
+			<string>liters</string>
+			<string>deciliters</string>
+		</array>
+	</dict>
+	<dict>
+		<key>category</key>
+		<string>Mass and Weight</string>
+		<key>units</key>
+		<array>
+			<string>pounds</string>
+			<string>ounces</string>
+			<string>mg</string>
+			<string>g</string>
+			<string>kg</string>
+		</array>
+	</dict>
+	<dict>
+		<key>category</key>
+		<string>Length</string>
+		<key>units</key>
+		<array>
+			<string>mm</string>
+			<string>cm</string>
+			<string>m</string>
+			<string>inches</string>
+		</array>
+	</dict>
+	<dict>
+		<key>category</key>
+		<string>Others</string>
+		<key>units</key>
+		<array>
+			<string>slices</string>
+			<string>servings</string>
+			<string>halves</string>
+			<string>heads</string>
+			<string>drops</string>
+			<string>leaves</string>
+		</array>
+	</dict>
+</array>
+</plist>

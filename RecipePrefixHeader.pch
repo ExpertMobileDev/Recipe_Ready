@@ -1,0 +1,56 @@
+//
+//  RecipePrefixHeader.pch
+//  Recipe Ready
+//
+//  Created by mac on 11/14/16.
+//  Copyright © 2016 mac. All rights reserved.
+//
+
+#ifndef RecipePrefixHeader_pch
+#define RecipePrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import <SystemConfiguration/SystemConfiguration.h>
+#import "UIImageView+WebCache.h"
+
+@import Firebase;
+
+#import "Rate.h"
+#import "Ingredient.h"
+#import "Recipe.h"
+#import "RecipeDetail.h"
+#import "UserInfo.h"
+
+#import "AppConstant.h"
+#import "AppData.h"
+
+#define appdata						[AppData sharedData]
+#define UD							[NSUserDefaults standardUserDefaults]
+
+//Database
+#define	FIRRef						[[FIRDatabase database] reference]
+
+//Personal Database
+#define FIRPersonalData				[[FIRRef child:kPersonalData] child:appdata.strUserId]
+#define FIRFavoriteRecipe			[FIRPersonalData child:kFavoriteRecipe]
+#define FIRCreatedRecipe			[FIRPersonalData child:kCreatedRecipe]
+#define FIRPostedRecipePerUser		[FIRPersonalData child:kPostedRecipe]
+#define FIRIngredient				[FIRPersonalData child:kIngredient]
+#define FIRFollowing				[FIRPersonalData child:kFollowingUser]
+
+//Rate Recipes Info
+#define FIRRate						[FIRRef child:kRate]
+//Posted Recipe Data
+#define FIRPostedRecipe				[FIRRef child:kPostedRecipe]
+//User Info
+#define FIRUsers					[FIRRef child:kUserData]
+
+//Storage
+#define FIRStorage					[[FIRStorage storage] reference]
+#define FIRStorageCreatedRecipe		[[[FIRStorage storage] reference] child:kCreatedRecipe]
+#define FIRStorageAvatar			[[[FIRStorage storage] reference] child:kAvatarStorage]
+
+#endif /* RecipePrefixHeader_pch */
